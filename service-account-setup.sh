@@ -2,7 +2,7 @@
 echo "🚀 Creating the broken scenario setup..."
 
 # Create the namespace
-kubectl create namespace meta --or-already-exists
+kubectl create namespace meta
 
 # Create a dummy deployment that simulates a monitoring pod wanting to read deployments
 kubectl create deployment dev-deployment -n meta --image=nginx:alpine --replicas=1
